@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Little Explorers</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="./img/logole.png" alt=""></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="./servicios.html" class="text-orange nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a href="./servicios.html" class="text-orange nav-link">Fiestas</a>
+            </li>
+            <li class="nav-item">
+                <a href="./quienessomos.html" class="text-orange nav-link">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contacto" class="text-orange nav-link">Contáctenos</a>
+            </li>
+            <li class="nav-item">
+                <button
+              class="nav-btn text-light btn-dark-pink"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Reserva
+            </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Bienvenidos a <span class="text-dark-pink"> Little Explorer </span></h1>
+            <p class="lead my-4">
+                Somos el mejor <span class="text-light-pink">playground indoor</span> en Bogotá que cuenta con un espacio de <span class="text-orange">cafe y cooworking</span> para los papás y cuidadores.
+            </p>
+            <button
+              class="btn btn-dark-pink btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Ver más
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/avion.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="h-2 p-5 bg-pelotas text-dark d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="f-5 text-light">Little Explorers</h2>
+                </div>
+                <div class="col-12">
+                    <a href="#"><i class="bi bi-twitter text-light mx-2 f-2"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-light mx-2 f-2"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-light mx-2 f-2"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-light mx-2 f-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horario -->
+    <section id="learn" class="p-5">
+        <div class="container">            
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 p-5 text-center">
+                    <h2 class="title text-dark-pink">Prográmate</h2>
+                </div>
+                <div class="col-md p-5 text-center circle">  
+                    <div class="square text-center">
+                        <h3 class="subtitle lead">
+                            Nuestros horarios
+                        </h3>
+                        <p>
+                            <strong>Lunes a Viernes</strong><br>
+                            10:00am a 6:00pm <br>
+                            <strong>Sábado y Domingos</strong><br>
+                            10:00am a 6:30pm <br>
+                        </p>                    
+                    </div>                  
+                </div>
+                <div class="col-md text-center">
+                    <img src="img/calendario.png" class="img-fluid" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto-->
+    <section id="contacto" class="p-5">
+        <div class="container">
+            <h1 class="title text-center text-dark-pink">Escríbenos</h1>
+            <p class="text-center m-4">Solicita nuestras tarifas, realiza reservaciones y pongámonos en contacto</p>
+    
+            <form>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>                    
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <label for="typeOfQuestion" class="form-label">Tipo de consulta</label>
+                        <select class="form-select" id="typeOfQuestion" name="typeOfQuestion" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="Services">Servicios</option>
+                            <option value="Hours">Horarios</option>
+                            <option value="Other">Otra</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agreeToTerms" required>
+                            <label class="form-check-label" for="agreeToTerms">
+                                He leído y acepto los <a class="text-dark-pink" href="terms-and-conditions.html" target="_blank">términos y condiciones</a>
+                            </label>
+                        </div>                        
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">                        
+                        <button type="submit" class="btn btn-dark-pink">Enviar</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Galería de fotos -->
+    <section id="gallery" class="p-5 bg-light-pink">
+        <div class="container">
+            <h2 class="text-center text-white">Gallery of Photos</h2>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-1.png" class="d-block w-100" alt="Photo 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-2.png" class="d-block w-100" alt="Photo 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-3.png" class="d-block w-100" alt="Photo 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-3.png" class="d-block w-100" alt="Photo 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-2.png" class="d-block w-100" alt="Photo 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-1.png" class="d-block w-100" alt="Photo 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-2.png" class="d-block w-100" alt="Photo 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-3.png" class="d-block w-100" alt="Photo 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./img/galeria-1.png" class="d-block w-100" alt="Photo 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more carousel items for additional photos -->
+                        </div>
+                        <a class="carousel-control-prev" href="#photoCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#photoCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" ariahidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Preguntas Frecuentes -->
+    <section id="questions" class="p-5">
+        <div class="container">
+          <h2 class="title text-dark-pink text-center mb-4">Preguntas Frecuentes</h2>
+          <div class="accordion accordion-flush" id="questions">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-one"
+                >
+                  Dónde están ubicados?
+                </button>
+              </h2>
+              <div
+                id="question-one"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  En la calle XDCAJD
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-two"
+                >
+                  ¿Tienen aforo máximo?
+                </button>
+              </h2>
+              <div
+                id="question-two"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Si, respetando las medidas preventivas recomendadas por el Ministerio de Salud de Colombia, consideramos un aforo máximo de 30 personas.
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-three"
+                >
+                  ¿Qué métodos de pagos reciben?
+                </button>
+              </h2>
+              <div
+                id="question-three"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Aceptamos tarjetas de débito y crédito, efectivo, cheques y criptomonedas.
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-four"
+                >
+                  ¿Quiénes son los cuidadores?
+                </button>
+              </h2>
+              <div
+                id="question-four"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Madres y padres voluntarios que tienen a sus niños en el lugar y cuidadores certificados.
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#question-five"
+                >
+                  ¿Puedo llevar mascotas?
+                </button>
+              </h2>
+              <div
+                id="question-five"
+                class="accordion-collapse collapse"
+                data-bs-parent="#questions"
+              >
+                <div class="accordion-body">
+                  Si, este espacio es pet friendly.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto & Mapa -->
+      <section class="p-5 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md text-center">
+                    <h2 class="mb-4 subtitle text-dark-pink">Información de contacto</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold text-dark-pink">Ubicación:</span> Calle 116 #17a - 60
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold text-dark-pink">Enrollment Phone:</span> 304 (253) 5195
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold text-dark-pink">Barrio:</span> Pepe Sierra
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold text-dark-pink">Email de información:</span> contacto@littleexplorers.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md d-flex align-items-center justify-content-center">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+  
+      <!-- Footer -->
+      <footer class="p-5 bg-light-pink text-white text-center position-relative">
+        <div class="container">
+          <p class="lead">Copyright &copy; 2023 @jscaballerodev</p>
+  
+          <a href="#" class="text-dark position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer>
+  
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="enroll"
+        tabindex="-1"
+        aria-labelledby="enrollLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="enrollLabel">Ponte en contacto</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">Rellena este formulario y nos contactaremos contigo</p>
+              <form>
+                <div class="mb-3">
+                  <label for="first-name" class="col-form-label">
+                    Nombre:
+                  </label>
+                  <input type="text" class="form-control" id="first-name" />
+                </div>                
+                <div class="mb-3">
+                  <label for="email" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="col-form-label">Teléfono:</label>
+                  <input type="tel" class="form-control" id="phone" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-dark-pink"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-dark-pink">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoianNjYWJhbGxlcm9kZXYiLCJhIjoiY2xvaGVkbm93MDZweTJqcWhlN3phdHdqbSJ9.JXxt6PGZqF64WmdCNQH5Uw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-74.04743296002404, 4.698157285579349],
+        zoom: 13,
+      })
+    </script>
+  </body>
+</html>
