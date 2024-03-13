@@ -16,13 +16,22 @@
     />
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Favicon link -->
+    <link rel="icon" type="image/x-icon" href="/img/LOGO-COLOR-CUADRADO-BÁSICO.ico">
+    <style>
+      .navbar-brand img {
+          max-height: 120px;
+          width: auto;
+          padding: 5px 0;
+      }
+  </style>
     <title>Little Explorers</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light py-3">
       <div class="container">
-        <a href="index.html" class="navbar-brand"><img src="./img/logole.png" alt=""></a>
+        <a href="index.html" class="navbar-brand"><img src="./img/LOGO COLOR.png" alt=""></a>
 
         <button
           class="navbar-toggler"
@@ -111,7 +120,7 @@
         </p>
 
         <button
-          class="btn btn-dark-pink btn-lg"
+          class="btn btn-dark-pink btn-lg mb-2"
           data-bs-toggle="modal"
           data-bs-target="#enroll"
         >
@@ -119,6 +128,70 @@
         </button>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- Galería de fotos -->
+<section id="gallery" class="p-5 bg-light-pink">
+  <div class="container">
+      <h2 class="text-center text-white">Galería de fotos</h2>
+      <div class="row g-4">
+          <div class="col-12">
+              <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">                            
+                      <div class="carousel-item active">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <img src="./img/EVENT/e10.jpg" class="d-block w-100" alt="Photo 1">
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="./img/EVENT/e11.jpg" class="d-block w-100" alt="Photo 2">
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="./img/EVENT/e12.jpg" class="d-block w-100" alt="Photo 3">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <img src="./img/EVENT/e13.jpg" class="d-block w-100" alt="Photo 1">
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="./img/EVENT/e14.jpg" class="d-block w-100" alt="Photo 2">
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="./img/EVENT/e1.jpg" class="d-block w-100" alt="Photo 3">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./img/EVENT/e2.jpg" class="d-block w-100" alt="Photo 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./img/EVENT/e3.jpg" class="d-block w-100" alt="Photo 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./img/EVENT/e4.jpg" class="d-block w-100" alt="Photo 3">
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Add more carousel items for additional photos -->
+                  </div>
+                  <a class="carousel-control-prev" href="#photoCarousel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#photoCarousel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" ariahidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </a>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
 
